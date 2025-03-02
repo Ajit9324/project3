@@ -57,7 +57,7 @@ input_data = {
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     with st.spinner('Making prediction...'):
-        pred, prob = predict_survival(input_data)
+        pred, prob = predict_Heartattack(input_data)
 
         if pred == 1:
             # Survived
