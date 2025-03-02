@@ -18,9 +18,9 @@ def predict_survival(d):
 st.title("heart disease Prediction")
 
 # Input fields for each parameter
-age = st.number_input("age", min_value=29, max_value=77, value=50.0)
+age = st.number_input("age", min_value=29, max_value=77, value=50)
 sex = st.number_input("sex", min_value=0, max_value=1, value=1)
-cp = st.number_input("cp", min_value=0.0, max_value=3.0, value=50.0, step=0.1)
+cp = st.number_input("cp", min_value=0.0, max_value=3.0, value=50, step=0.1)
 trestbps = st.number_input("trestbps", min_value=94, max_value=200, value=1)
 chol = st.number_input("chol", min_value=126, max_value=564, value=126)
 fbs = st.number_input("fbs	", min_value=0, max_value=1, value=1, step=0.1)
