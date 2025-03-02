@@ -51,7 +51,7 @@ input_data = {
     'oldpeak': oldpeak,
     'slope': slope,
     'thal': thal,
-    
+    'ca' : ca,
 }
 
 # When the user clicks the "Predict" button
@@ -61,7 +61,7 @@ if st.button("Predict"):
 
         if pred == 1:
             # Survived
-            st.success(f"Prediction: Survived with probability {prob:.2f}")
+            st.success(f"Prediction: Heart attack ispossible with probability {prob:.2f}")
         else:
             # Not survived
-            st.error(f"Prediction: Did not survive with probability {prob:.2f}")
+            st.error(f"Prediction: Heart attack is not possible with probability {prob:.2f}")
